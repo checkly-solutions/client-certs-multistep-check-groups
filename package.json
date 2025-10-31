@@ -1,0 +1,17 @@
+{
+  "name": "client-certs-for-groups-and-multistep-checks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "checkly": "^6.8.2",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3"
+  }
+}

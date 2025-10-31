@@ -1,0 +1,8 @@
+tests-examples/
+playwright-report/
+playwright/.cache/
+test-results/
+
+node_modules/
+
+.DS_Store
