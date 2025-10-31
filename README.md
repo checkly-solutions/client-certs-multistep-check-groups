@@ -45,6 +45,9 @@ npx checkly test --record
 npx checkly deploy
 ```
 
-### Why are there asterisks in the URL?
+### Why are there asterisks in the URLs?
 
-We saved the private key passphrase (`badssl.com`) as a secret, so you're seeing Checkly's secret scrubbing in action. This is an edge case where the passphrase is the same as the URL in this case, so we see that being scrubbed everywhere. 
+<img width="1532" height="539" alt="CleanShot 2025-10-31 at 16 31 53" src="https://github.com/user-attachments/assets/39b8192b-c108-43e5-9d4b-039318840ceb" />
+
+
+We saved the private key passphrase (`badssl.com`) as a secret, so you're seeing Checkly's secret scrubbing in action. This is an edge case where the passphrase is the same as the URL, so we see that being scrubbed everywhere. 
