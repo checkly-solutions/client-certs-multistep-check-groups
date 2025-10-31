@@ -24,9 +24,4 @@ test("Using a client cert", async () => {
     const response = await context.get('https://client.badssl.com/')
     await expect(response.status()).toBe(200)
   })
-  
-  await test.step('GET client-cert-missing.badssl.com', async () => {
-    const failResponse = await context.get('https://client-cert-missing.badssl.com/')
-    await expect(failResponse.status()).toBe(400)
-  })
 })

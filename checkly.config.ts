@@ -1,8 +1,8 @@
 import { defineConfig } from 'checkly'
 
 const config = defineConfig({
-  projectName: 'Client certs for groups and multistep checks',
-  logicalId: 'client-certs-for-groups-and-multistep-checks',
+  projectName: 'client-certs-multistep-check-groups',
+  logicalId: 'client-certs-multistep-check-groups',
   checks: {
     runtimeId: '2025.04',
     frequency: 1440,

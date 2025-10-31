@@ -1,5 +1,3 @@
-# Demo repo: different client certs for each group, for multistep checks
-
 This repository shows how you can use different client certificates for different check groups containing Multistep Checks.
 
 ## How does this work?
@@ -7,19 +5,22 @@ This repository shows how you can use different client certificates for differen
 Each of your client certificates and passphrases should be converted to a **base64 string** and saved as a [global environment secret](https://app.checklyhq.com/environment-variables). 
 
 Each **group** has two env variables:
-* `CERT_VAR_NAME` - the name of the global env secret that contains the certificate
+* `CERT_VAR_NAME` - the name of the global env secret that contains the certificate.
 * `CERT_PASSPHRASE_VAR_NAME` - optional, only needed if the client key is private.
 
-The Multistep checks in that group use the above information to grab the right certificate and use it for the test.
+The Multistep Checks use the group env vars to grab the right certificate and use it for the test.
 
 ## Try it out!
 
-This demo uses the public client cert endpoint provided by [badssl](https://badssl.com/download/). The client cert and key are included in the badssl-client.pem for reference.
+This demo uses the public client cert endpoint provided by [badssl](https://badssl.com/download/). The client cert and key are included in this repo as `badssl-client.pem`, for reference.
 
 To set up this demo:
 
-1. `npm install`
-2. Convert badssl-client.pem to a base64 string.
+1. Install dependencies:
+```
+npm install
+```
+2. Convert `badssl-client.pem` to a base64 string.
 ```
 base64 -i badssl-client.pem
 ```
